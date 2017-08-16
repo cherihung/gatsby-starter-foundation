@@ -1,6 +1,5 @@
 {
-  "extends": ["airbnb", "prettier"],
-  "plugins": ["react", "jsx-a11y", "import"],
+  "extends": ["@cherihung/gatsby", "prettier"],
   "rules": {
     "react/prefer-stateless-function": "off",
     "react/prop-types": "off",
@@ -10,6 +9,7 @@
     "import/core-modules": []
   },
   "env": {
-    "browser": true
+    "browser": true,
+    "es6": true
   }
 }

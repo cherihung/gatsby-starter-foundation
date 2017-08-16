@@ -36,13 +36,10 @@
     "react-twitter-widgets": "^1.4.0"
   },
   "devDependencies": {
+    "@cherihung/eslint-config-gatsby": "^1.0.5",
     "cli-glob": "^0.1.0",
-    "eslint": "^3.19.0",
-    "eslint-config-airbnb": "^15.0.2",
+    "eslint": "^4.2.0",
     "eslint-config-prettier": "^2.3.0",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-jsx-a11y": "^5.1.1",
-    "eslint-plugin-react": "^7.1.0",
     "gh-pages": "^1.0.0",
     "prettier": "^1.5.3",
     "remark-cli": "^4.0.0",
@@ -53,7 +50,8 @@
     "write-good": "^0.11.3"
   },
   "keywords": [
-    "gatsby", "foundation-sites"
+    "gatsby",
+    "foundation-sites"
   ],
   "license": "MIT",
   "main": "n/a",
@@ -66,6 +64,7 @@
     "build:gh": "npm run clean && npm run build:pp && gh-pages -d public",
     "clean": "rm -rf public",
     "lint:js": "eslint --ext .js,.jsx --ignore-pattern public,static .",
+    "lint:fix": "eslint --fix ./",
     "lint:md": "remark content/posts/",
     "write-good": "write-good $(glob 'content/posts/**/*.md')",
     "format:js": "prettier '**/*.{js,jsx}' --write"
